@@ -43,7 +43,7 @@ export default function Header({ currentView, onNavigate, onOpenBooking }: Heade
           role="button"
           tabIndex={0}
         >
-          <img src='/src/assets/images/hari-logo.png' alt="Hari Logo" className="h-20 w-auto" />
+          <img src='/images/hari-logo.png' alt="Hari Logo" className="h-20 w-auto" />
           {/* <HariLogo className="h-14 w-auto" showSlogan={false} lightText={true} /> */}
         </div>
 
