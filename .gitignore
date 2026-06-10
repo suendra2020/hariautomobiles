@@ -1,0 +1,27 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Netlify
+.netlify/
+.netlify/state.json
+
+# Build artifacts
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+.AppleDouble
+.LSOverride

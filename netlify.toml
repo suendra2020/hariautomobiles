@@ -1,0 +1,66 @@
+# Netlify Configuration for Hari Automobiles Website
+# This file configures build settings, redirects, and deployment rules
+
+[build]
+  # Build command to generate static files
+  command = "npm run build"
+  # Output directory containing the built static files
+  publish = "dist"
+  # Node version for build environment
+  node_version = "22.13.0"
+
+# Environment variables for build
+[build.environment]
+  NODE_ENV = "production"
+
+# Redirect all requests to index.html for client-side routing
+# This ensures React Router can handle all routes properly
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Cache control headers for optimal performance
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/dist/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpeg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"

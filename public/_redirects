@@ -1,0 +1,13 @@
+# Netlify Redirects Configuration
+# This file ensures client-side routing works correctly for single-page applications
+
+# Redirect all requests to index.html for React Router
+/*    /index.html   200
+
+# Cache busting for specific file types
+/index.html    /index.html    200
+
+# Security: Prevent access to sensitive files
+/.env*         /.env.example  404
+/package.json  /package.json  404
+/vite.config.* /vite.config.ts 404
