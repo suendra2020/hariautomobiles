@@ -115,7 +115,7 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
 
           {/* Centerpiece Branding Logo inside the ring */}
           <div className="absolute inset-8 flex items-center justify-center z-10 transition-transform duration-500 scale-102 group">
-           <img src='/src/assets/images/hari-logo.png' alt="Hari Logo" className="h-20 w-auto splash-logo" />
+           <img src='/images/hari-logo.png' alt="Hari Logo" className="h-20 w-auto splash-logo" />
           </div>
         </div>
 
