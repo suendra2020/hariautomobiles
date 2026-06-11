@@ -439,14 +439,14 @@ export default function HomeView({ onNavigate, onOpenBooking, onSelectService }:
       name: "Multijet & T-Jet Timing",
       brand: "Fiat Specialist Care",
       tag: "Engine Cabin Diagnostics",
-      image: "/src/assets/images/hari-logo.png",
+      image: "/images/hari-logo.png",
       desc: "Full performance diagnostics, authentic spark timing calibration, and expert mechanical tuning for raw Italian power."
     },
     {
       name: "Jeep SUV Motor Tuning",
       brand: "Jeep 4x4 Offroad Care",
       tag: "Engine Overhauls",
-      image: "/src/assets/images/fiat-1.jpg",
+      image: "/images/fiat-1.jpg",
       desc: "Dedicated 4x4 transmission diagnostics, complete suspension checking, electrical control, and original parts mapping."
     },
     {
